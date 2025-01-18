@@ -1,0 +1,28 @@
+
+
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h1, h2, h3, h4 {
+    background-color: #32373d; 
+    color: #f884c8; 
+    border: 1px solid #D6A800;
+    padding: 10px;
+    font-family: Arial, "Open Sans", Sans-serif;
+}
+
+a {
+    color: #2980b9; 
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8a16a1; 
+}
+
+a:visited {
+    color: #da0caa; 
+}
