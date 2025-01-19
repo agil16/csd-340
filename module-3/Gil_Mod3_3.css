@@ -1,0 +1,89 @@
+
+h1 {
+    text-align: center;
+}
+
+/* Styling for the side-by-side divs container */
+.side-by-side {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 20px; 
+}
+
+/* Styling for the individual list containers */
+.ordered-list-container,
+.unordered-list-container {
+    width: 45%; 
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* Styling for the ordered list and its title */
+.ordered-list-container {
+    border: 1px solid red;
+}
+
+.ordered-list-container h3 {
+    margin: 0;
+    font-weight: 500;
+}
+
+.ordered-list-container ol {
+    list-style: decimal inside; 
+    padding: 10px;
+    font-weight: 300;
+}
+
+/* Styling for the unordered list and its title */
+.unordered-list-container {
+    border: 1px dashed red; 
+}
+
+.unordered-list-container h3 {
+    margin: 0;
+    font-weight: 500;
+}
+
+.unordered-list-container ul {
+    list-style: upper-roman inside; 
+    padding: 10px;
+    font-weight: 300;
+}
+
+/* Styling for anchor links */
+a {
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+.last-div {
+    width: 100%;
+    margin-top: 60%; 
+    text-align: right; 
+    margin-bottom: 20px;
+}
+
+/* Styling for the anchor link in the last div */
+.last-div a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
+.last-div a:hover {
+    text-decoration: underline;
+    color: #d9534f;
+}
+
+/* Style for the horizontal line */
+.last-div hr {
+    border: none;
+    border-top: 1px solid black; 
+    margin-top: 10px; 
+    margin-left: 0; 
+    margin-right: 0;
+}
