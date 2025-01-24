@@ -1,0 +1,60 @@
+
+/* Apply a CSS grid with three columns for the image gallery */
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
+    border: 2px solid #000; /* Outer border for the entire grid */
+    padding: 0; /* Remove padding inside the container */
+    margin: 0 auto; /* Center the grid on the page */
+    gap: 0; /* Ensure no space between grid items */
+}
+
+/* Style for the grid items (no inner borders) */
+#image-gallery > div {
+    padding: 10px; /* Add inner space inside items */
+    box-sizing: border-box;
+    margin: 0; /* Ensure no margins between items */
+}
+
+/* Add borders between columns and rows */
+#image-gallery {
+    border-collapse: collapse; /* Collapse the borders into one continuous line */
+}
+
+#image-gallery > div {
+    border-right: 1px solid #000; /* Add right borders */
+    border-bottom: 1px solid #000; /* Add bottom borders */
+}
+
+/* Remove the border from the last column and last row */
+#image-gallery > div:nth-child(3n) {
+    border-right: none; /* Remove the right border on the last column */
+}
+
+#image-gallery > div:nth-last-child(-n+3) {
+    border-bottom: none; /* Remove the bottom border on the last row */
+}
+
+/* Center the h1 text */
+h1 {
+    text-align: center;
+    color: rgba(0, 128, 255, 0.8); /* Optional color */
+}
+
+/* Center the h3 text */
+h3 {
+    text-align: center;
+    color: rgba(34, 139, 34, 0.8); /* Optional color */
+}
+
+/* Center the figure tag */
+figure {
+    text-align: center;
+}
+
+/* Style for figcaption */
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    color: rgba(128, 0, 128, 0.8); /* Optional color */
+}
